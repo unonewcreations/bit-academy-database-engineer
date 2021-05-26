@@ -1,0 +1,41 @@
+#start van spel 10 chips
+rouletteChips=10
+rouletteInzet = []
+while True:
+    #check hoeveel chips de speler heeft
+    if(rouletteChips == 0):
+        print("GAME OVER")
+        break
+    #print het aantal chips
+    print(f"Je hebt {rouletteChips} chips!")
+    #roulette input van de console
+    rouletteInput = input("Op welke nummers wil je inzetten?")
+    #checken of input een cijfer is met functie isdigit()
+    if(rouletteInput.isdigit()):
+        #rouletteInput in de lijst toevoegen en chips in mindering brengen
+        rouletteInzet.append(rouletteInput)
+        rouletteChips -= 1
+    print(rouletteInzet)
+    #Spel gaat beginnen, logica van het spel
+    #rouletteChips == 0, betekent dat het spel gaat beginnen als speler al zijn beschikbare chips heeft ingezet.
+    if(rouletteChips == 0 or rouletteInput == "STOP"): 
+        print("rien ne va plus")
+        #balletje is gevallen op routeletteUitkomst
+        routeletteUitkomst = random.randint(1, 36)
+        print(f"De uitkomst is {routeletteUitkomst}")
+        #checken van rouletteInzet tov routeletteUitkomst
+        #rouletteInzet = ['1', '2', '3', '4']
+        for inzet in rouletteInzet:
+            #controleren en verwerken van uitkomst en chips aantal bijwerken
+            if(int(inzet) == routeletteUitkomst):
+                print("Correct gegokt!!! +35")
+                #winst (35) + ingezette chip (1)
+                rouletteChips += 36
+            else:
+                print("Fout gegokt")
+        #reset (maak lijst leeg) rouletteInzet voor nieuwe ronde
+        rouletteInzet = []
+    if(rouletteInput == "BREAK"):
+        #Spel afsluiten
+        print("Doei")
+        break (edited) 

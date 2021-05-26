@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: clo-tetris-game
+Version: 0.0.6
+Summary: A simple implementation of the Tetris Game
+Home-page: https://github.com/lombardc/tetris_game
+Author: Cedric LOMBARD
+Author-email: cedric.lombard@cern.ch
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pygame
+Requires-Dist: pillow
+
+Tetris - Une version simple du jeu Tetris
+========================================================
+
+Ce packagage implÃ©mente une version simple du jeu Tetris
+
+
+Vous pouvez l'installer avec pip:
+
+    pip install clo-tetris-game
+
+Exemple d'usage:
+
+    >>> from tetris_game import TetrisGame
+    >>> TetrisGame()
+
+Ou directement dans un terminal :
+
+    playTetris
+
+Ce code est sous licence MIT.
+
+

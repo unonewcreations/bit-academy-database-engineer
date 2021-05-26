@@ -1,0 +1,3 @@
+[console_scripts]
+playTetris = tetris_game.core:TetrisGame
+
