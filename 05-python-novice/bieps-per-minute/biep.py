@@ -1,8 +1,12 @@
 import schedule
+# import time
 
 
-def time():
-    print("Biep")
+def tijd():
+    print("Biep!")
 
 
-schedule.every(1).minutes.do(time)
+schedule.every(1).minutes.do(tijd)
+
+while True:
+    schedule.run_pending()
