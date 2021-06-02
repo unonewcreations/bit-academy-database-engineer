@@ -1,0 +1,182 @@
+[
+    {
+        "name": "Hannah",
+        "gender": "F",
+        "age": 27,
+        "fav_color": "blue"
+    },
+    {
+        "name": "Josephine",
+        "gender": "F",
+        "age": 39,
+        "fav_color": "blue"
+    },
+    {
+        "name": "Mohamed",
+        "gender": "M",
+        "age": 58,
+        "fav_color": "green"
+    },
+    {
+        "name": "Janneke",
+        "gender": "F",
+        "age": 76,
+        "fav_color": "yellow"
+    },
+    {
+        "name": "Charissa",
+        "gender": "F",
+        "age": 51,
+        "fav_color": "blue"
+    },
+    {
+        "name": "Brady",
+        "gender": "M",
+        "age": 71,
+        "fav_color": "blue"
+    },
+    {
+        "name": "Nelleke",
+        "gender": "F",
+        "age": 23,
+        "fav_color": "red"
+    },
+    {
+        "name": "Tom",
+        "gender": "M",
+        "age": 47,
+        "fav_color": "pink"
+    },
+    {
+        "name": "Maarten",
+        "gender": "M",
+        "age": 74,
+        "fav_color": "red"
+    },
+    {
+        "name": "Mauro",
+        "gender": "M",
+        "age": 45,
+        "fav_color": "red"
+    },
+    {
+        "name": "Laura",
+        "gender": "F",
+        "age": 61,
+        "fav_color": "blue"
+    },
+    {
+        "name": "Mark",
+        "gender": "M",
+        "age": 48,
+        "fav_color": "pink"
+    },
+    {
+        "name": "Lieke",
+        "gender": "F",
+        "age": 31,
+        "fav_color": "red"
+    },
+    {
+        "name": "Sara",
+        "gender": "F",
+        "age": 41,
+        "fav_color": "red"
+    },
+    {
+        "name": "Khallil",
+        "gender": "M",
+        "age": 46,
+        "fav_color": "pink"
+    },
+    {
+        "name": "Roos",
+        "gender": "F",
+        "age": 61,
+        "fav_color": "green"
+    },
+    {
+        "name": "Harm",
+        "gender": "M",
+        "age": 65,
+        "fav_color": "red"
+    },
+    {
+        "name": "Lola",
+        "gender": "F",
+        "age": 66,
+        "fav_color": "purple"
+    },
+    {
+        "name": "Debbie",
+        "gender": "F",
+        "age": 56,
+        "fav_color": "yellow"
+    },
+    {
+        "name": "Sander",
+        "gender": "M",
+        "age": 36,
+        "fav_color": "green"
+    },
+    {
+        "name": "Sanne",
+        "gender": "F",
+        "age": 64,
+        "fav_color": "red"
+    },
+    {
+        "name": "Jan",
+        "gender": "M",
+        "age": 67,
+        "fav_color": "red"
+    },
+    {
+        "name": "Calvin",
+        "gender": "M",
+        "age": 55,
+        "fav_color": "green"
+    },
+    {
+        "name": "Bo",
+        "gender": "M",
+        "age": 61,
+        "fav_color": "yellow"
+    },
+    {
+        "name": "Fatima",
+        "gender": "F",
+        "age": 45,
+        "fav_color": "purple"
+    },
+    {
+        "name": "Robin",
+        "gender": "F",
+        "age": 31,
+        "fav_color": "yellow"
+    },
+    {
+        "name": "Edward",
+        "gender": "M",
+        "age": 46,
+        "fav_color": "green"
+    },
+    {
+        "name": "Jet",
+        "gender": "F",
+        "age": 26,
+        "fav_color": "red"
+    },
+    {
+        "name": "Ivo",
+        "gender": "M",
+        "age": 36,
+        "fav_color": "yellow"
+    },
+    {
+        "name": "Jan",
+        "gender": "F",
+        "age": 41,
+        "fav_color": "red"
+    }
+]
