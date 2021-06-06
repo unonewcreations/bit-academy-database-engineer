@@ -40,5 +40,6 @@ for entry in data:
     cmd = "INSERT INTO users VALUES(%s, %s, %s, %s)"
     conn.execute(cmd, values)
 mydb.commit()
+mydb.close()
 
 print("Geslaagd!")

@@ -1,4 +1,5 @@
 # import packages
+import json
 import mysql.connector
 import requests
 
@@ -7,7 +8,8 @@ import requests
 mydb = mysql.connector.connect(
     host="localhost",
     user="root",
-    password=""
+    password="",
+    database="pokemon"
 )
 
 # point to database
@@ -18,23 +20,29 @@ conn.execute("CREATE DATABASE IF NOT EXISTS pokemon")
 
 # create the table if it doesn't exist.
 conn.execute(
-    "CREATE TABLE IF NOT EXISTS users (id int, name varchar(255), weight int, height int)")
-exit()
+    "CREATE TABLE IF NOT EXISTS pokemon_data (id int, name varchar(255), weight int, height int)")
 
-# get argument from command line
-# arg = int(sys.argv[1])
+# get data from html and create list
+pok_tabel = []
+for x in range(1, 151):
+    response = requests.get('https://pokeapi.co/api/v2/pokemon/' + str(x))
+    pok_data = response.json()
+    pok_tabel.append(pok_data)
 
-# get data from html
-get_data = requests.get('https://pokeapi.co/api/v2/pokemon/')
+# Insert each entry from json into the table.
+pok_car = ['id', 'name', 'weight', 'height']
+for entry in pok_tabel:
 
-# put data in variable
-put_data = get_data.json()
-print(put_data)
+    # this will make sure that each key will default to None
+    # if the key doesn't exist in the json entry.
+    values = [entry.get(key, None) for key in pok_car]
 
-# # number between 1 and 200
-# if arg in range(1, 200):
-#     # print title from list
-#     print(put_data[arg]["title"])
-# # print number if not between 1 and 200
-# else:
-#     print('Geef een nummer op tussen 1 en 200')
+    # execute the command and replace '?' with the each value
+    # in 'values'.
+    cmd = "INSERT INTO pokemon_data VALUES(%s, %s, %s, %s)"
+    conn.execute(cmd, values)
+mydb.commit()
+mydb.close
+
+# print messsage
+print('Succes! Alle pokemons zijn gevangen')
