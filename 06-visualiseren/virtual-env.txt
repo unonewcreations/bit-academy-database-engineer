@@ -18,3 +18,7 @@ $ pip freeze > requirements.txt
 
 5. Zodra je klaar bent met het uitvoeren van het programma, deactiveer de virtual environment met het onderstaande commando;
 $ deactivate
+
+6. Install jupyter and notebook
+$ pip install jupyter
+$ pip install notebook
