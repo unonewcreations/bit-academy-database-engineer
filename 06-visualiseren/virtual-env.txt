@@ -22,3 +22,5 @@ $ deactivate
 6. Install jupyter and notebook
 $ pip install jupyter
 $ pip install notebook
+
+jupyter notebook
