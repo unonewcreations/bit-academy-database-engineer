@@ -23,4 +23,5 @@ $ deactivate
 $ pip install jupyter
 $ pip install notebook
 
+7. Start jupyter notebook
 jupyter notebook
